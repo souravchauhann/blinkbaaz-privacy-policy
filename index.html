@@ -1,172 +1,564 @@
-<!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
-	<title></title>
-	<meta name="generator" content="LibreOffice 26.2.2.2 (Linux)"/>
-	<meta name="created" content="00:00:00"/>
-	<meta name="changed" content="00:00:00"/>
-	<style type="text/css">
-		@page { size: 8.5in 11in; margin: 0.79in }
-		p { margin-bottom: 0.1in; line-height: 115%; background: transparent }
-		pre { background: transparent }
-		pre.western { font-family: "Liberation Mono", monospace; font-size: 10pt }
-		pre.cjk { font-family: "Noto Sans Mono CJK SC", monospace; font-size: 10pt }
-		pre.ctl { font-family: "Liberation Mono", monospace; font-size: 10pt }
-	</style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BlinkBaaz — Privacy Policy</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Source+Sans+3:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --ink:#152238;
+    --ink-soft:#3c4b64;
+    --paper:#FAF9F5;
+    --panel:#F1EDE3;
+    --line:#DCD5C4;
+    --gold:#A8792F;
+    --gold-deep:#7C5A22;
+    --muted:#736D5E;
+    --good:#3F6B4E;
+    --max-w:1180px;
+  }
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{
+    margin:0;
+    background:var(--paper);
+    color:var(--ink);
+    font-family:'Source Sans 3', sans-serif;
+    font-size:16.5px;
+    line-height:1.65;
+    -webkit-font-smoothing:antialiased;
+  }
+  ::selection{background:var(--gold); color:#fff;}
+
+  a{color:var(--gold-deep);}
+  a:hover{color:var(--gold);}
+
+  /* ===== Header / Hero ===== */
+  .hero{
+    border-bottom:1px solid var(--line);
+    padding:56px 32px 40px;
+    background:
+      radial-gradient(circle at 88% 12%, rgba(168,121,47,0.10), transparent 45%),
+      var(--paper);
+  }
+  .hero-inner{max-width:var(--max-w); margin:0 auto;}
+  .eyebrow{
+    display:flex; align-items:center; gap:10px;
+    font-family:'JetBrains Mono', monospace;
+    font-size:12px; letter-spacing:.14em; text-transform:uppercase;
+    color:var(--gold-deep); margin-bottom:22px;
+  }
+  .eyebrow .mark{
+    width:22px;height:22px; flex:none;
+  }
+  .hero h1{
+    font-family:'Fraunces', serif;
+    font-weight:600;
+    font-size:clamp(2.1rem, 4.4vw, 3.4rem);
+    line-height:1.06;
+    margin:0 0 14px;
+    max-width:16ch;
+    letter-spacing:-0.01em;
+  }
+  .hero p.lede{
+    max-width:62ch;
+    color:var(--ink-soft);
+    font-size:1.06rem;
+    margin:0 0 26px;
+  }
+  .hero-meta{
+    display:flex; flex-wrap:wrap; gap:10px 26px;
+    font-family:'JetBrains Mono', monospace;
+    font-size:12.5px; color:var(--muted);
+  }
+  .hero-meta strong{color:var(--ink); font-weight:500;}
+
+  /* ===== Quick glance strip ===== */
+  .glance{
+    max-width:var(--max-w); margin:-1px auto 0; padding:0 32px;
+  }
+  .glance-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit, minmax(190px,1fr));
+    gap:1px;
+    background:var(--line);
+    border:1px solid var(--line);
+    margin-top:-1px;
+    transform:translateY(-1px);
+  }
+  .glance-card{
+    background:var(--panel);
+    padding:20px 20px 22px;
+  }
+  .glance-card .num{
+    font-family:'JetBrains Mono', monospace;
+    font-size:11px; color:var(--gold-deep); letter-spacing:.08em;
+  }
+  .glance-card h3{
+    font-family:'Fraunces', serif;
+    font-size:1.02rem; font-weight:600; margin:8px 0 6px;
+  }
+  .glance-card p{
+    font-size:13.3px; color:var(--ink-soft); margin:0; line-height:1.5;
+  }
+
+  /* ===== Layout ===== */
+  .layout{
+    max-width:var(--max-w); margin:0 auto;
+    display:grid;
+    grid-template-columns:250px 1fr;
+    gap:56px;
+    padding:52px 32px 100px;
+    align-items:start;
+  }
+  nav.index{
+    position:sticky; top:28px;
+    max-height:calc(100vh - 56px);
+    overflow-y:auto;
+    padding-right:6px;
+  }
+  nav.index .idx-label{
+    font-family:'JetBrains Mono', monospace;
+    font-size:11px; letter-spacing:.12em; text-transform:uppercase;
+    color:var(--muted); margin-bottom:14px;
+  }
+  nav.index ol{
+    list-style:none; margin:0; padding:0;
+    border-left:1px solid var(--line);
+  }
+  nav.index li{margin:0;}
+  nav.index a{
+    display:block;
+    text-decoration:none;
+    color:var(--ink-soft);
+    font-size:13.6px;
+    padding:8px 0 8px 16px;
+    border-left:2px solid transparent;
+    margin-left:-1px;
+    transition:color .15s ease, border-color .15s ease;
+  }
+  nav.index a:hover{color:var(--ink);}
+  nav.index a.active{
+    color:var(--ink);
+    border-left-color:var(--gold);
+    font-weight:600;
+  }
+  nav.index a.active::before{
+    content:"";
+  }
+
+  main{min-width:0;}
+  section.doc-section{
+    padding-bottom:44px;
+    margin-bottom:44px;
+    border-bottom:1px solid var(--line);
+    scroll-margin-top:24px;
+  }
+  section.doc-section:last-child{border-bottom:none;}
+  .sec-head{
+    display:flex; align-items:baseline; gap:14px; margin-bottom:16px;
+  }
+  .sec-head .sec-no{
+    font-family:'JetBrains Mono', monospace;
+    color:var(--gold-deep);
+    font-size:13px;
+    flex:none;
+  }
+  section.doc-section h2{
+    font-family:'Fraunces', serif;
+    font-weight:600;
+    font-size:1.5rem;
+    margin:0;
+    letter-spacing:-0.005em;
+  }
+  section.doc-section h3{
+    font-family:'Fraunces', serif;
+    font-weight:600;
+    font-size:1.08rem;
+    margin:26px 0 10px;
+  }
+  section.doc-section h4{
+    font-family:'Source Sans 3', sans-serif;
+    font-weight:700;
+    font-size:.98rem;
+    margin:20px 0 8px;
+    color:var(--ink);
+  }
+  section.doc-section p{
+    color:var(--ink-soft);
+    margin:0 0 14px;
+    max-width:70ch;
+  }
+  section.doc-section ul, section.doc-section ol.plain{
+    margin:0 0 14px; padding-left:22px;
+    color:var(--ink-soft);
+  }
+  section.doc-section li{margin-bottom:8px; max-width:68ch;}
+  section.doc-section li strong{color:var(--ink);}
+
+  .term-list{
+    display:grid; gap:2px;
+    background:var(--line);
+    border:1px solid var(--line);
+    margin:0 0 18px;
+  }
+  .term{
+    background:var(--paper);
+    padding:14px 18px;
+    display:grid;
+    grid-template-columns:140px 1fr;
+    gap:16px;
+  }
+  .term dt{
+    font-family:'JetBrains Mono', monospace;
+    font-size:12.5px; font-weight:500;
+    color:var(--gold-deep);
+    align-self:start;
+  }
+  .term dd{
+    margin:0; color:var(--ink-soft); font-size:14.8px;
+  }
+
+  .callout{
+    background:var(--panel);
+    border-left:3px solid var(--gold);
+    padding:14px 18px;
+    font-size:14.6px;
+    color:var(--ink-soft);
+    margin:0 0 18px;
+    max-width:70ch;
+  }
+  .callout strong{color:var(--ink);}
+
+  table.ret{
+    width:100%; border-collapse:collapse; margin:0 0 18px;
+    font-size:14.3px;
+  }
+  table.ret th{
+    text-align:left; font-family:'JetBrains Mono', monospace;
+    font-weight:500; font-size:11.5px; letter-spacing:.06em; text-transform:uppercase;
+    color:var(--muted);
+    padding:8px 14px 10px 0;
+    border-bottom:1px solid var(--line);
+  }
+  table.ret td{
+    padding:12px 14px 12px 0;
+    border-bottom:1px solid var(--line);
+    color:var(--ink-soft);
+    vertical-align:top;
+  }
+  table.ret td.cat{color:var(--ink); font-weight:600;}
+  table.ret tr:last-child td{border-bottom:none;}
+
+  .tag{
+    display:inline-block;
+    font-family:'JetBrains Mono', monospace;
+    font-size:10.5px; letter-spacing:.06em; text-transform:uppercase;
+    background:rgba(168,121,47,0.14);
+    color:var(--gold-deep);
+    padding:3px 8px;
+    border-radius:2px;
+    margin-right:6px;
+  }
+
+  .contact-card{
+    background:var(--ink);
+    color:var(--paper);
+    padding:32px;
+    display:flex; flex-wrap:wrap; justify-content:space-between; align-items:center; gap:20px;
+  }
+  .contact-card h2{
+    font-family:'Fraunces', serif; font-size:1.4rem; margin:0 0 6px; color:#fff;
+  }
+  .contact-card p{color:#C9CFDB; margin:0; max-width:44ch; font-size:14.5px;}
+  .contact-card a.btn{
+    text-decoration:none;
+    background:var(--gold);
+    color:#1c1305;
+    font-weight:600;
+    font-size:14px;
+    padding:12px 22px;
+    white-space:nowrap;
+  }
+  .contact-card a.btn:hover{background:#c08f3f;}
+
+  footer{
+    max-width:var(--max-w); margin:0 auto; padding:0 32px 60px;
+    color:var(--muted); font-size:12.5px;
+    font-family:'JetBrains Mono', monospace;
+  }
+
+  @media (max-width: 880px){
+    .layout{grid-template-columns:1fr; gap:0; padding:36px 20px 80px;}
+    nav.index{position:static; max-height:none; margin-bottom:36px; border-bottom:1px solid var(--line); padding-bottom:20px;}
+    .hero{padding:40px 20px 32px;}
+    .glance{padding:0 20px;}
+    footer{padding:0 20px 50px;}
+    .term{grid-template-columns:1fr; gap:4px;}
+    .contact-card{padding:26px 22px;}
+  }
+
+  @media (prefers-reduced-motion: reduce){
+    html{scroll-behavior:auto;}
+  }
+</style>
 </head>
-<body lang="en-US" link="#000080" vlink="#800000" dir="ltr"><pre class="western">BLINKBAAZ · PRIVACY POLICY 
-How BlinkBaaz collects, uses, and protects your data
-This policy explains what information BlinkBaaz gathers when you use the app, why we gather it, who we share it with, and the choices and controls available to you.
-Last updated: August 12, 2026 Applies to: BlinkBaaz application Governing region: Haryana, India 
-01
-What we collect
-Account details you provide, plus usage data, device identifiers, and - with your permission - location, camera, and photos.
-02
-Why we collect it
-To run and improve the Service, manage your account, contact you, and, where permitted, send offers.
-03
-Who sees it
-Service providers, affiliates, and other parties in a business transfer - never sold outright to advertisers.
-04
-How long we keep it
-Account data up to 24 months post-closure; usage data and server logs up to 24 months.
-05
-Your controls
-Access, correct, or delete your data from account settings, or by contacting us directly.
-Index
-1. Interpretation &amp; Definitions
-2. Data We Collect
-3. Use of Your Data
-4. Sharing Your Data
-5. Retention
-6. International Transfer
-7. Deleting Your Data
-8. Disclosure
-9. Security
-10. Children's Privacy
-11. Third-Party Links
-12. Policy Changes
-13. Contact
-§1
-Interpretation &amp; Definitions
-Capitalized terms below carry the same meaning whether used in singular or plural form throughout this policy.
-Account
-A unique account created for you to access the Service or parts of it.
-Affiliate
-An entity that controls, is controlled by, or shares common control with a party - meaning 50% or more ownership of voting shares or equivalent authority.
-Application
-BlinkBaaz, the software program provided by the Company.
-Company
-Referred to as &quot;the Company,&quot; &quot;We,&quot; &quot;Us,&quot; or &quot;Our&quot; - refers to BlinkBaaz.
-Country/State
-Haryana, India.
-Device
-Any device that can access the Service - a computer, cell phone, or tablet.
-Personal Data
-Any information relating to an identified or identifiable individual. Used interchangeably with &quot;Personal Information&quot; unless a specific law requires otherwise.
-Service
-Refers to the Application.
-Service Provider
-A person or company that processes data on the Company's behalf - to deliver the Service, perform related tasks, or analyze usage.
-Usage Data
-Data collected automatically through use of the Service, or generated by the Service's own infrastructure (e.g. time spent on a page).
-User
-Any individual who accesses or uses the Service.
-You
-The individual - or the company or entity on whose behalf that individual acts - using the Service.
-§2
-Data We Collect
-Usage Data
-Collected automatically as you use the Service - your Device's IP address, browser type and version, the pages you visit, time and date of visit, time spent on those pages, unique device identifiers, and other diagnostic data. On mobile, this can also include device type, mobile operating system, and the mobile browser you use.
-Information Collected While Using the Application
-With your prior permission, BlinkBaaz may collect:
-* Location information - to power location-dependent features.
-* Camera and photo library access - to power features that use pictures or media from your Device.
-You're in control. Location, camera, and photo access can be enabled or disabled at any time through your Device settings.
-Tracking Technologies &amp; Cookies
-We use tracking technologies, including cookies, to monitor activity on the Service and make improvements over time.
-§3
-Use of Your Data
-The Company may use Personal Data to:
-* Provide and maintain the Service, including monitoring usage.
-* Manage your Account as a registered user, giving you access to the functionality available to registered users.
-* Perform a contract - developing, fulfilling, and complying with any purchase or other contract made through the Service.
-* Contact you by email, phone, SMS, or push notification about updates or service-related information, including necessary security updates.
-* Send offers and news about goods, services, and events similar to what you've already purchased or asked about - sent only with your consent where required by law (e.g. EEA/UK), and always with an easy opt-out via unsubscribe link.
-* Manage your requests to Us.
-* Support business transfers - mergers, restructuring, or asset sales, where Personal Data may be among the assets involved.
-* Improve the Service - through data analysis, usage trends, and evaluating the effectiveness of promotional campaigns.
-§4
-Sharing Your Data
-We may share Your Personal Data in these situations:
-* PROVIDERSTo monitor and analyze Service use, and to contact You.
-* TRANSFERSIn connection with a merger, asset sale, financing, or acquisition.
-* AFFILIATESWho are required to honor this Privacy Policy.
-* PUBLIC AREASAnything you share in public areas of the Service may be viewed - and distributed - by other users.
-* CONSENTFor any other purpose You explicitly agree to.
-§5
-Retention of Your Data
-We keep Personal Data only as long as necessary for the purposes described in this policy, to meet legal obligations, resolve disputes, and enforce our agreements. Where possible, we shorten retention or reduce identifiability by deleting, aggregating, or anonymizing data. The periods below are maximums - data may be deleted or anonymized sooner.
-CATEGORY
-PERIOD
-PURPOSE
-User Accounts
-Duration of account + 24 months
-Handling post-termination issues and disputes
-App usage statistics
-Up to 24 months
-Understanding feature adoption &amp; improvements
-Server logs (IP, access times)
-Up to 24 months
-Security monitoring &amp; troubleshooting
-When we retain data longer
-* Legal obligation - e.g. financial records required by tax authorities.
-* Legal claims - data needed to establish, exercise, or defend a claim.
-* Your request - you've asked us to keep specific information.
-* Technical limits - data sitting in backups awaiting routine deletion.
-How we delete or anonymize data
-* Deletion - removed from our systems and no longer processed.
-* Backup retention - residual encrypted backup copies may briefly remain, restored only for security, disaster recovery, or legal compliance.
-* Anonymization - converted into statistical data that can't be linked back to you, and may be kept indefinitely for research.
-§6
-International Transfer
-Your information is processed at the Company's operating offices, which may sit outside your state, province, or country - meaning data protection laws there may differ from your own jurisdiction. Where required by law, we apply appropriate safeguards and supplementary measures, and we won't transfer your data anywhere without adequate controls in place to keep it secure.
-§7
-Deleting Your Data
-You can delete, or ask us to help delete, the Personal Data we hold about you - either from within the Service itself, or by signing in to your account settings to manage, update, or amend your information directly. You can also contact us to request access, correction, or deletion. Note that we may need to retain certain information where we have a legal obligation to do so.
-§8
-Disclosure of Your Data
-Business Transactions
-If BlinkBaaz is involved in a merger, acquisition, or asset sale, your Personal Data may transfer as part of that deal. We'll give notice before your data becomes subject to a different privacy policy.
-Law Enforcement
-We may disclose your data if legally required, or in response to a valid request from a court or government authority.
-Other Legal Requirements
-We may disclose Personal Data in the good-faith belief it's necessary to:
-* Comply with a legal obligation
-* Protect and defend the Company's rights or property
-* Prevent or investigate wrongdoing connected to the Service
-* Protect the personal safety of Users or the public
-* Protect against legal liability
-§9
-Security
-We use commercially reasonable measures to protect your Personal Data, but no method of transmission or storage over the internet is 100% secure - so we can't guarantee absolute security.
-§10
-Children's &amp; Minors' Privacy
-The Service isn't directed at anyone under 16, and we don't knowingly collect Personal Information from children under that age. If we learn we've collected such data, we'll remove it from our servers as soon as reasonably possible.
-Where a User's applicable law sets a higher age of consent than 16, and we rely on consent as our legal basis, we may require a parent or guardian's consent before collecting and using that User's Personal Information.
-Parents &amp; guardians: if you believe your child has shared Personal Information with us, please contact us right away.
-§11
-Third-Party Links
-The Service may link to other websites we don't operate. We strongly recommend reviewing the privacy policy of every site you visit - we have no control over, and no responsibility for, the content or privacy practices of third-party sites.
-§12
-Changes to This Policy
-We may update this policy from time to time. Any changes will be posted here, and we'll notify you by email and/or a prominent notice within the Service before the change takes effect. The &quot;Last updated&quot; date at the top of this page will reflect the most recent revision.
-§13
-Contact
-Questions about this policy?
-Reach out directly and we'll get back to you.
-souravchauhan6008@gmail.com 
-BlinkBaaz - Privacy Policy - Last updated August 12, 2026 </pre>
+<body>
+
+<header class="hero">
+  <div class="hero-inner">
+    <div class="eyebrow">
+      <svg class="mark" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M12 2L3 6.5V12C3 17 6.8 21 12 22C17.2 21 21 17 21 12V6.5L12 2Z" stroke="#A8792F" stroke-width="1.4"/>
+        <circle cx="12" cy="11.5" r="2.6" fill="#A8792F"/>
+      </svg>
+      BlinkBaaz · Privacy Policy
+    </div>
+    <h1>How BlinkBaaz collects, uses, and protects your data</h1>
+    <p class="lede">This policy explains what information BlinkBaaz gathers when you use the app, why we gather it, who we share it with, and the choices and controls available to you.</p>
+    <div class="hero-meta">
+      <span>Last updated: <strong>August 12, 2026</strong></span>
+      <span>Applies to: <strong>BlinkBaaz application</strong></span>
+      <span>Governing region: <strong>Haryana, India</strong></span>
+    </div>
+  </div>
+</header>
+
+<div class="glance">
+  <div class="glance-grid">
+    <div class="glance-card">
+      <div class="num">01</div>
+      <h3>What we collect</h3>
+      <p>Account details you provide, plus usage data, device identifiers, and — with your permission — location, camera, and photos.</p>
+    </div>
+    <div class="glance-card">
+      <div class="num">02</div>
+      <h3>Why we collect it</h3>
+      <p>To run and improve the Service, manage your account, contact you, and, where permitted, send offers.</p>
+    </div>
+    <div class="glance-card">
+      <div class="num">03</div>
+      <h3>Who sees it</h3>
+      <p>Service providers, affiliates, and other parties in a business transfer — never sold outright to advertisers.</p>
+    </div>
+    <div class="glance-card">
+      <div class="num">04</div>
+      <h3>How long we keep it</h3>
+      <p>Account data up to 24 months post-closure; usage data and server logs up to 24 months.</p>
+    </div>
+    <div class="glance-card">
+      <div class="num">05</div>
+      <h3>Your controls</h3>
+      <p>Access, correct, or delete your data from account settings, or by contacting us directly.</p>
+    </div>
+  </div>
+</div>
+
+<div class="layout">
+
+  <nav class="index" aria-label="Policy sections">
+    <div class="idx-label">Index</div>
+    <ol id="idx-list">
+      <li><a href="#definitions" data-target="definitions">Interpretation &amp; Definitions</a></li>
+      <li><a href="#collecting" data-target="collecting">Data We Collect</a></li>
+      <li><a href="#use" data-target="use">Use of Your Data</a></li>
+      <li><a href="#sharing" data-target="sharing">Sharing Your Data</a></li>
+      <li><a href="#retention" data-target="retention">Retention</a></li>
+      <li><a href="#transfer" data-target="transfer">International Transfer</a></li>
+      <li><a href="#deletion" data-target="deletion">Deleting Your Data</a></li>
+      <li><a href="#disclosure" data-target="disclosure">Disclosure</a></li>
+      <li><a href="#security" data-target="security">Security</a></li>
+      <li><a href="#children" data-target="children">Children's Privacy</a></li>
+      <li><a href="#links" data-target="links">Third-Party Links</a></li>
+      <li><a href="#changes" data-target="changes">Policy Changes</a></li>
+      <li><a href="#contact" data-target="contact">Contact</a></li>
+    </ol>
+  </nav>
+
+  <main>
+
+    <section class="doc-section" id="definitions">
+      <div class="sec-head"><span class="sec-no">§1</span><h2>Interpretation &amp; Definitions</h2></div>
+      <p>Capitalized terms below carry the same meaning whether used in singular or plural form throughout this policy.</p>
+
+      <dl class="term-list">
+        <div class="term"><dt>Account</dt><dd>A unique account created for you to access the Service or parts of it.</dd></div>
+        <div class="term"><dt>Affiliate</dt><dd>An entity that controls, is controlled by, or shares common control with a party — meaning 50% or more ownership of voting shares or equivalent authority.</dd></div>
+        <div class="term"><dt>Application</dt><dd>BlinkBaaz, the software program provided by the Company.</dd></div>
+        <div class="term"><dt>Company</dt><dd>Referred to as "the Company," "We," "Us," or "Our" — refers to BlinkBaaz.</dd></div>
+        <div class="term"><dt>Country/State</dt><dd>Haryana, India.</dd></div>
+        <div class="term"><dt>Device</dt><dd>Any device that can access the Service — a computer, cell phone, or tablet.</dd></div>
+        <div class="term"><dt>Personal Data</dt><dd>Any information relating to an identified or identifiable individual. Used interchangeably with "Personal Information" unless a specific law requires otherwise.</dd></div>
+        <div class="term"><dt>Service</dt><dd>Refers to the Application.</dd></div>
+        <div class="term"><dt>Service Provider</dt><dd>A person or company that processes data on the Company's behalf — to deliver the Service, perform related tasks, or analyze usage.</dd></div>
+        <div class="term"><dt>Usage Data</dt><dd>Data collected automatically through use of the Service, or generated by the Service's own infrastructure (e.g. time spent on a page).</dd></div>
+        <div class="term"><dt>User</dt><dd>Any individual who accesses or uses the Service.</dd></div>
+        <div class="term"><dt>You</dt><dd>The individual — or the company or entity on whose behalf that individual acts — using the Service.</dd></div>
+      </dl>
+    </section>
+
+    <section class="doc-section" id="collecting">
+      <div class="sec-head"><span class="sec-no">§2</span><h2>Data We Collect</h2></div>
+
+      <h3>Usage Data</h3>
+      <p>Collected automatically as you use the Service — your Device's IP address, browser type and version, the pages you visit, time and date of visit, time spent on those pages, unique device identifiers, and other diagnostic data. On mobile, this can also include device type, mobile operating system, and the mobile browser you use.</p>
+
+      <h3>Information Collected While Using the Application</h3>
+      <p>With your prior permission, BlinkBaaz may collect:</p>
+      <ul>
+        <li><strong>Location information</strong> — to power location-dependent features.</li>
+        <li><strong>Camera and photo library access</strong> — to power features that use pictures or media from your Device.</li>
+      </ul>
+      <div class="callout"><strong>You're in control.</strong> Location, camera, and photo access can be enabled or disabled at any time through your Device settings.</div>
+
+      <h3>Tracking Technologies &amp; Cookies</h3>
+      <p>We use tracking technologies, including cookies, to monitor activity on the Service and make improvements over time.</p>
+    </section>
+
+    <section class="doc-section" id="use">
+      <div class="sec-head"><span class="sec-no">§3</span><h2>Use of Your Data</h2></div>
+      <p>The Company may use Personal Data to:</p>
+      <ul>
+        <li><strong>Provide and maintain the Service</strong>, including monitoring usage.</li>
+        <li><strong>Manage your Account</strong> as a registered user, giving you access to the functionality available to registered users.</li>
+        <li><strong>Perform a contract</strong> — developing, fulfilling, and complying with any purchase or other contract made through the Service.</li>
+        <li><strong>Contact you</strong> by email, phone, SMS, or push notification about updates or service-related information, including necessary security updates.</li>
+        <li><strong>Send offers and news</strong> about goods, services, and events similar to what you've already purchased or asked about — sent only with your consent where required by law (e.g. EEA/UK), and always with an easy opt-out via unsubscribe link.</li>
+        <li><strong>Manage your requests</strong> to Us.</li>
+        <li><strong>Support business transfers</strong> — mergers, restructuring, or asset sales, where Personal Data may be among the assets involved.</li>
+        <li><strong>Improve the Service</strong> — through data analysis, usage trends, and evaluating the effectiveness of promotional campaigns.</li>
+      </ul>
+    </section>
+
+    <section class="doc-section" id="sharing">
+      <div class="sec-head"><span class="sec-no">§4</span><h2>Sharing Your Data</h2></div>
+      <p>We may share Your Personal Data in these situations:</p>
+      <ul>
+        <li><span class="tag">Providers</span>To monitor and analyze Service use, and to contact You.</li>
+        <li><span class="tag">Transfers</span>In connection with a merger, asset sale, financing, or acquisition.</li>
+        <li><span class="tag">Affiliates</span>Who are required to honor this Privacy Policy.</li>
+        <li><span class="tag">Public areas</span>Anything you share in public areas of the Service may be viewed — and distributed — by other users.</li>
+        <li><span class="tag">Consent</span>For any other purpose You explicitly agree to.</li>
+      </ul>
+    </section>
+
+    <section class="doc-section" id="retention">
+      <div class="sec-head"><span class="sec-no">§5</span><h2>Retention of Your Data</h2></div>
+      <p>We keep Personal Data only as long as necessary for the purposes described in this policy, to meet legal obligations, resolve disputes, and enforce our agreements. Where possible, we shorten retention or reduce identifiability by deleting, aggregating, or anonymizing data. The periods below are maximums — data may be deleted or anonymized sooner.</p>
+
+      <table class="ret">
+        <thead>
+          <tr><th>Category</th><th>Period</th><th>Purpose</th></tr>
+        </thead>
+        <tbody>
+          <tr><td class="cat">User Accounts</td><td>Duration of account + 24 months</td><td>Handling post-termination issues and disputes</td></tr>
+          <tr><td class="cat">App usage statistics</td><td>Up to 24 months</td><td>Understanding feature adoption &amp; improvements</td></tr>
+          <tr><td class="cat">Server logs (IP, access times)</td><td>Up to 24 months</td><td>Security monitoring &amp; troubleshooting</td></tr>
+        </tbody>
+      </table>
+
+      <h3>When we retain data longer</h3>
+      <ul>
+        <li><strong>Legal obligation</strong> — e.g. financial records required by tax authorities.</li>
+        <li><strong>Legal claims</strong> — data needed to establish, exercise, or defend a claim.</li>
+        <li><strong>Your request</strong> — you've asked us to keep specific information.</li>
+        <li><strong>Technical limits</strong> — data sitting in backups awaiting routine deletion.</li>
+      </ul>
+
+      <h3>How we delete or anonymize data</h3>
+      <ul>
+        <li><strong>Deletion</strong> — removed from our systems and no longer processed.</li>
+        <li><strong>Backup retention</strong> — residual encrypted backup copies may briefly remain, restored only for security, disaster recovery, or legal compliance.</li>
+        <li><strong>Anonymization</strong> — converted into statistical data that can't be linked back to you, and may be kept indefinitely for research.</li>
+      </ul>
+    </section>
+
+    <section class="doc-section" id="transfer">
+      <div class="sec-head"><span class="sec-no">§6</span><h2>International Transfer</h2></div>
+      <p>Your information is processed at the Company's operating offices, which may sit outside your state, province, or country — meaning data protection laws there may differ from your own jurisdiction. Where required by law, we apply appropriate safeguards and supplementary measures, and we won't transfer your data anywhere without adequate controls in place to keep it secure.</p>
+    </section>
+
+    <section class="doc-section" id="deletion">
+      <div class="sec-head"><span class="sec-no">§7</span><h2>Deleting Your Data</h2></div>
+      <p>You can delete, or ask us to help delete, the Personal Data we hold about you — either from within the Service itself, or by signing in to your account settings to manage, update, or amend your information directly. You can also contact us to request access, correction, or deletion. Note that we may need to retain certain information where we have a legal obligation to do so.</p>
+    </section>
+
+    <section class="doc-section" id="disclosure">
+      <div class="sec-head"><span class="sec-no">§8</span><h2>Disclosure of Your Data</h2></div>
+
+      <h4>Business Transactions</h4>
+      <p>If BlinkBaaz is involved in a merger, acquisition, or asset sale, your Personal Data may transfer as part of that deal. We'll give notice before your data becomes subject to a different privacy policy.</p>
+
+      <h4>Law Enforcement</h4>
+      <p>We may disclose your data if legally required, or in response to a valid request from a court or government authority.</p>
+
+      <h4>Other Legal Requirements</h4>
+      <p>We may disclose Personal Data in the good-faith belief it's necessary to:</p>
+      <ul>
+        <li>Comply with a legal obligation</li>
+        <li>Protect and defend the Company's rights or property</li>
+        <li>Prevent or investigate wrongdoing connected to the Service</li>
+        <li>Protect the personal safety of Users or the public</li>
+        <li>Protect against legal liability</li>
+      </ul>
+    </section>
+
+    <section class="doc-section" id="security">
+      <div class="sec-head"><span class="sec-no">§9</span><h2>Security</h2></div>
+      <p>We use commercially reasonable measures to protect your Personal Data, but no method of transmission or storage over the internet is 100% secure — so we can't guarantee absolute security.</p>
+    </section>
+
+    <section class="doc-section" id="children">
+      <div class="sec-head"><span class="sec-no">§10</span><h2>Children's &amp; Minors' Privacy</h2></div>
+      <p>The Service isn't directed at anyone under 16, and we don't knowingly collect Personal Information from children under that age. If we learn we've collected such data, we'll remove it from our servers as soon as reasonably possible.</p>
+      <p>Where a User's applicable law sets a higher age of consent than 16, and we rely on consent as our legal basis, we may require a parent or guardian's consent before collecting and using that User's Personal Information.</p>
+      <div class="callout"><strong>Parents &amp; guardians:</strong> if you believe your child has shared Personal Information with us, please <a href="mailto:souravchauhan6008@gmail.com">contact us</a> right away.</div>
+    </section>
+
+    <section class="doc-section" id="links">
+      <div class="sec-head"><span class="sec-no">§11</span><h2>Third-Party Links</h2></div>
+      <p>The Service may link to other websites we don't operate. We strongly recommend reviewing the privacy policy of every site you visit — we have no control over, and no responsibility for, the content or privacy practices of third-party sites.</p>
+    </section>
+
+    <section class="doc-section" id="changes">
+      <div class="sec-head"><span class="sec-no">§12</span><h2>Changes to This Policy</h2></div>
+      <p>We may update this policy from time to time. Any changes will be posted here, and we'll notify you by email and/or a prominent notice within the Service before the change takes effect. The "Last updated" date at the top of this page will reflect the most recent revision.</p>
+    </section>
+
+    <section class="doc-section" id="contact" style="border-bottom:none;">
+      <div class="sec-head"><span class="sec-no">§13</span><h2>Contact</h2></div>
+      <div class="contact-card">
+        <div>
+          <h2>Questions about this policy?</h2>
+          <p>Reach out directly and we'll get back to you.</p>
+        </div>
+        <a class="btn" href="mailto:souravchauhan6008@gmail.com">souravchauhan6008@gmail.com</a>
+      </div>
+    </section>
+
+  </main>
+</div>
+
+<footer>
+  BlinkBaaz — Privacy Policy — Last updated August 12, 2026
+</footer>
+
+<script>
+  const links = Array.from(document.querySelectorAll('nav.index a'));
+  const sections = links.map(l => document.getElementById(l.dataset.target));
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      const link = links.find(l => l.dataset.target === entry.target.id);
+      if (!link) return;
+      if (entry.isIntersecting) {
+        links.forEach(l => l.classList.remove('active'));
+        link.classList.add('active');
+      }
+    });
+  }, { rootMargin: '-15% 0px -70% 0px', threshold: 0 });
+  sections.forEach(s => s && observer.observe(s));
+</script>
+
 </body>
 </html>
